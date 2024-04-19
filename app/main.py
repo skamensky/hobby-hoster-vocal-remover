@@ -121,7 +121,6 @@ async def download_youtube_video(request_id: str, youtube_url: str,working_dir:s
         "--extract-audio",
         "--output", f"{working_dir}/%(title)s.%(ext)s",
         "--add-metadata",
-        "--embed-thumbnail",
         "--newline",
         "--ffmpeg-location",YOUTUBE_DL_FFMPEG_PATH,
         youtube_url
