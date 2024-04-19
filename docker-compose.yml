@@ -7,3 +7,7 @@ services:
     labels:
       - "hobby-hoster.enable=true"
       - "hobby-hoster.port=8000"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
