@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#youtubeForm {
+    margin-bottom: 20px;
+}
+
+#status {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #FF0000; /* Red color for errors */
+    font-weight: bold;
+}
+
+.success {
+    color: #008000; /* Green color for success messages */
+    font-weight: bold;
+}
+
+#youtubeUrl {
+    width: 40%; /* Adjust the width as needed */
+    max-width: 600px; /* Optional: Ensures it doesn't get too wide on larger screens */
+    display: block; /* Make sure it's a block element to respect width and margin */
+}
+
+body {
+    font-size: 36px; /* Increase the base font size */
+}
+
+input, button {
+    font-size: 24px; /* Increase font size for better readability */
+}

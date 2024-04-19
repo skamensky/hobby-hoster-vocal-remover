@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocal Remover</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="icon" type="image/x-icon" href="/static/music-note-icon.ico">
+</head>
+
+
+
+<body>
+    <div>
+        <p>Remove vocals from youtube videos.</p>
+        <p>Put in the URL of the video and click "Remove Vocals".</p>
+    </div>
+    <form id="youtubeForm">
+        <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL" required>
+        <button type="submit">Remove Vocals</button>
+    </form>
+    <div id="status"></div>
+    <div id="downloadLink"></div>
+
+    <script src="/static/index.js"></script>
+</body>
+</html>
