@@ -129,7 +129,7 @@ class Separator(object):
         mask_tta = self._separate(X_spec_pad, roi_size,"Processing Batch - Stage 2")
         mask_tta = mask_tta[:, :, roi_size // 2:]
         mask = (mask[:, :, :n_frame] + mask_tta[:, :, :n_frame]) * 0.5
-
+        print("Postprocessing, improving audio quality")
         y_spec, v_spec = self._postprocess(X_spec, mask)
 
         return y_spec, v_spec

@@ -147,6 +147,8 @@ async def run_vocal_removal(request_id: str, working_dir: str,input_file:str):
         f"{VOCAL_REMOVER_PATH}/inference.py",
         "--input", input_file,
         "--output_dir", working_dir,
+        # this makes things go slow, but gives us a low, predictable memory usage
+        "--batchsize", "1",
         "--tta"
     ]
     
